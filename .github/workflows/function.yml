@@ -1,0 +1,9 @@
+name: FUNCTION
+on: push
+jobs:
+  function:
+    runs-on: ubuntu-latest
+    steps:
+      - exit 1
+      - echo "Hello"
+        if ${{ failure() }} # success(), failure(), canceled(), always()
