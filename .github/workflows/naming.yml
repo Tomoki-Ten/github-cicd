@@ -1,0 +1,9 @@
+name: Naming
+on: push
+jobs:
+  naming:
+    name: JobName # job name
+    runs-on: ubuntu-latest
+    steps:
+      - name: StepName  # step name
+        run: echo "Hello"

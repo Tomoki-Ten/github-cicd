@@ -1,4 +1,4 @@
-name: VARIABLE
+name: Var
 on: push
 jobs:
   print:
@@ -6,4 +6,4 @@ jobs:
     env:
       USERNAME: ${{ vars.username }}
     steps:
-      - echo "${{ USERNAME }}"
+      - run: echo "${{ USERNAME }}"
