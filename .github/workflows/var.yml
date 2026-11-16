@@ -1,0 +1,9 @@
+name: VARIABLE
+on: push
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    env:
+      USERNAME: ${{ vars.username }}
+    run:
+      - echo "${{ USERNAME }}"
