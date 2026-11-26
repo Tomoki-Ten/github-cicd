@@ -1,7 +1,7 @@
 name: PythonVersion
-on: 
+on:
   pull_request:
-    path: ['python/*.py']
+    paths: ['python/*.py']
 jobs:
   python-test:
     runs-on: ubuntu-latest
