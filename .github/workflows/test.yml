@@ -1,7 +1,13 @@
 name: Test
 on:
   pull_request:
-    path: ['go/**/*.go']
+    path: ['go/**/*.go']  # ファイルのフィルタリング設定
+    # paths
+    # paths-ignore
+    # branches
+    # branches-ignore
+    # tags
+    # tags-ignore
 jobs:
   test:
     runs-on: ubuntu-latest
